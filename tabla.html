@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Propiedades CSS</title>
+    <style>
+        /* Estilo general de la tabla: se establece el ancho de la tabla al 100% y se elimina el espacio entre las celdas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif; /* Establece la fuente para la tabla */
+        }
+
+        /* Estilo de las celdas (th y td) */
+        th, td {
+            padding: 12px; /* Espacio interior en cada celda */
+            border: 1px solid #ddd; /* Borde gris claro para las celdas */
+            text-align: left; /* Alineación del texto a la izquierda */
+        }
+
+        /* Estilo para los encabezados de la tabla (th) */
+        th {
+            background-color: #007BFF; /* Color de fondo azul para los encabezados */
+            color: white; /* Texto en color blanco */
+        }
+
+        /* Estilo para las filas alternas */
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Fondo gris claro para las filas pares */
+        }
+
+        /* Efecto hover sobre las filas: cambia el fondo al pasar el ratón */
+        tr:hover {
+            background-color: #f1f1f1; /* Fondo gris claro cuando el ratón pasa por encima */
+        }
+
+        /* Estilo para las imágenes */
+        img {
+            width: 100px; /* Tamaño fijo para las imágenes */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #007BFF; /* Color azul para los enlaces */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+        }
+
+        /* Estilo para los enlaces cuando el ratón pasa sobre ellos */
+        a:hover {
+            text-decoration: underline; /* Subraya el enlace cuando el ratón pasa sobre él */
+        }
+
+        /* Estilo para el título */
+        h1 {
+            color: #333; /* Color de texto oscuro para el título */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título de la página -->
+    <h1>Tabla de Propiedades CSS</h1>
+
+    <!-- Tabla que contiene las propiedades CSS -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de la propiedad</th>
+                <th>Sintaxis</th>
+                <th>Descripción o uso</th>
+                <th>Ejemplo de uso</th>
+                <th>Valores comunes</th>
+                <th>Imagen</th>
+                <th>Enlace</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fila 1: color -->
+            <tr>
+                <td>color</td>
+                <td>color: valor;</td>
+                <td>Cambia el color del texto.</td>
+                <td><code>color: red;</code></td>
+                <td>red, blue, green, black</td>
+                <td><img src="imagenes/color.webp" alt="Ejemplo color"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/color" target="_blank">MDN - color</a></td>
+            </tr>
+            <!-- Fila 2: margin -->
+            <tr>
+                <td>margin</td>
+                <td>margin: valor;</td>
+                <td>Establece el margen exterior de un elemento.</td>
+                <td><code>margin: 10px;</code></td>
+                <td>px, em, rem, %</td>
+                <td><img src="imagenes/margin.webp" alt="Ejemplo margin"></td>
+                <td><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">W3Schools - margin</a></td>
+            </tr>
+            <!-- Fila 3: padding -->
+            <tr>
+                <td>padding</td>
+                <td>padding: valor;</td>
+                <td>Controla el espacio interno de un elemento.</td>
+                <td><code>padding: 15px;</code></td>
+                <td>px, em, rem, %</td>
+                <td><img src="imagenes/padding.webp" alt="Ejemplo padding"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/padding" target="_blank">MDN - padding</a></td>
+            </tr>
+            <!-- Fila 4: display -->
+            <tr>
+                <td>display</td>
+                <td>display: valor;</td>
+                <td>Define el modelo de visualización de un elemento.</td>
+                <td><code>display: block;</code></td>
+                <td>block, inline, flex, grid</td>
+                <td><img src="imagenes/display.webp" alt="Ejemplo display"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/display" target="_blank">MDN - display</a></td>
+            </tr>
+            <!-- Fila 5: font-size -->
+            <tr>
+                <td>font-size</td>
+                <td>font-size: valor;</td>
+                <td>Define el tamaño de la fuente del texto.</td>
+                <td><code>font-size: 16px;</code></td>
+                <td>px, em, rem</td>
+                <td><img src="imagenes/font-size.gif" alt="Ejemplo font-size"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" target="_blank">MDN - font-size</a></td>
+            </tr>
+            <!-- Fila 6: background-color -->
+            <tr>
+                <td>background-color</td>
+                <td>background-color: valor;</td>
+                <td>Cambia el color de fondo de un elemento.</td>
+                <td><code>background-color: #f0f0f0;</code></td>
+                <td>hex, rgb, rgba</td>
+                <td><img src="imagenes/background-color.webp" alt="Ejemplo background-color"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/background-color" target="_blank">MDN - background-color</a></td>
+            </tr>
+            <!-- Fila 7: border -->
+            <tr>
+                <td>border</td>
+                <td>border: valor;</td>
+                <td>Define el borde de un elemento.</td>
+                <td><code>border: 1px solid black;</code></td>
+                <td>px, solid, dashed, dotted</td>
+                <td><img src="imagenes/border.jpg" alt="Ejemplo border"></td>
+                <td><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">W3Schools - border</a></td>
+            </tr>
+            <!-- Fila 8: width -->
+            <tr>
+                <td>width</td>
+                <td>width: valor;</td>
+                <td>Define el ancho de un elemento.</td>
+                <td><code>width: 100px;</code></td>
+                <td>px, %, auto</td>
+                <td><img src="imagenes/width.webp" alt="Ejemplo width"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/width" target="_blank">MDN - width</a></td>
+            </tr>
+            <!-- Fila 9: height -->
+            <tr>
+                <td>height</td>
+                <td>height: valor;</td>
+                <td>Define la altura de un elemento.</td>
+                <td><code>height: 100px;</code></td>
+                <td>px, %, auto</td>
+                <td><img src="imagenes/height.png" alt="Ejemplo height"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height" target="_blank">MDN - height</a></td>
+            </tr>
+            <!-- Fila 10: text-align -->
+            <tr>
+                <td>text-align</td>
+                <td>text-align: valor;</td>
+                <td>Alinea el texto dentro de un elemento.</td>
+                <td><code>text-align: center;</code></td>
+                <td>left, right, center, justify</td>
+                <td><img src="imagenes/text-align.webp" alt="Ejemplo text-align"></td>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/text-align" target="_blank">MDN - text-align</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
